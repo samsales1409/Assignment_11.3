@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+            <script type="text/javascript">
+                function show(){
+                        //getting the attributes of a"google id"
+                        var as1=document.getElementById("google").getAttribute("id");
+                        var as2=document.getElementById("google").getAttribute("target");
+                        var as3=document.getElementById("google").getAttribute("href");
+                        //displaying the elements in Div attrs id
+                        document.getElementById("attrs").innerHTML = as1+"->"+as2+"->"+as3;
+                        
+
+
+
+                        }
+                function hide(){
+                    //removing the element div attrs
+                    document.body.removeChild(attrs);
+                }
+
+
+                
+            
+            </script>
+        </head>
+        <body>
+            <a id="google" target="_self" href="https://www.w3resource.com/">google</a>
+            <div id="attrs"></div>
+            <button onclick="show()">Show Attributes Of link</button>
+            <button onclick="hide()">Remove Result</button> 
+        </body>
+    </html>
